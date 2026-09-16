@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+
+# build outputs
+out/
+release/
+dist/
+build/
+
+# sqlite database & logs (never commit local dev data)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# environment variables
+.env
+.env.local
+.env.*
+
+# debug logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# os & editor settings
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,37 @@
+name: Build Windows Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    # required to actually create the release and upload the .exe
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm ci
+      - run: npm run typecheck
+      
+      # skip or remove if you haven't written unit tests yet
+      - run: npm test
+      
+      # bundle the electron app
+      - run: npm run dist
+
+      # create the github release and attach the installer
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: release/*.exe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,40 @@
+appId: com.studyflow.app
+productName: StudyFlow
+copyright: Copyright © 2026
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - out/**/*
+  - package.json
+
+# better-sqlite3 compiles to a native .node binary. Node's native addon
+# loader needs a real file on disk to open it — it can't dlopen something
+# sitting inside a compressed asar archive, so this file has to be
+# unpacked rather than bundled like the rest of the app.
+asarUnpack:
+  - '**/*.node'
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+
+# Fill in owner/repo with your actual GitHub username/repo if you want
+# electron-updater to check GitHub Releases for new versions later. Not
+# required just to build and distribute manually — delete this block
+# entirely if you don't plan to add auto-update.
+publish:
+  provider: github
+  owner: your-github-username
+  repo: studyflow

@@ -1,0 +1,58 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    /* Light Mode (Purple Tinted) */
+    --background: 250 20% 98%;
+    --foreground: 250 10% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 250 10% 10%;
+    --muted: 250 10% 92%;
+    --muted-foreground: 250 10% 45%;
+    --border: 250 15% 90%;
+    --primary: 262 80% 50%;
+    --primary-foreground: 0 0% 100%;
+    --accent: 262 80% 90%;
+    --accent-foreground: 262 80% 20%;
+    --ring: 262 80% 50%;
+    --radius: 0.625rem;
+  }
+
+  .dark {
+    /* Dark Mode (Deep Purple/Night Theme) */
+    --background: 250 25% 6%;
+    --foreground: 250 10% 95%;
+    --card: 250 25% 9%;
+    --card-foreground: 250 10% 95%;
+    --muted: 250 20% 15%;
+    --muted-foreground: 250 10% 65%;
+    --border: 250 20% 18%;
+    --primary: 262 80% 65%;
+    --primary-foreground: 0 0% 100%;
+    --accent: 262 50% 25%;
+    --accent-foreground: 262 80% 90%;
+    --ring: 262 80% 65%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+
+  .font-mono, code, kbd {
+    font-variant-numeric: tabular-nums;
+  }
+}

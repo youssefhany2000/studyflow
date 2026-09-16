@@ -1,0 +1,47 @@
+{
+  "name": "studyflow-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "StudyFlow — local-first study management desktop app",
+  "main": "out/main/main.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "typecheck": "tsc -p tsconfig.node.json --noEmit && tsc -p tsconfig.web.json --noEmit",
+    "test": "vitest run",
+    "dist": "npm run build && electron-builder --win",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.3.0",
+    "better-sqlite3": "^11.3.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.460.0",
+    "react-redux": "^9.1.2",
+    "react-router": "^8.0.0",
+    "react-sketch-canvas": "^8.0.0",
+    "recharts": "^2.13.0",
+    "tailwind-merge": "^2.5.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "jsdom": "^25.0.1",
+    "postcss": "^8.4.47",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.4"
+  }
+}
