@@ -6,7 +6,7 @@
 
 > A deeply focused, local-first study environment built for serious learners.
 
-**StudyFlow** is a completely free, offline desktop application designed to help you master complex subjects. I built this because I wanted a study tool that actually respected my focus—and my data. No expensive subscriptions, no cloud syncing delays, and no mandatory accounts. Just a lightning-fast, local environment to get deep work done.
+**StudyFlow** is a completely free, offline desktop application designed to help you master complex subjects. I built this because I wanted a study tool that actually respected my focus and my data. No expensive subscriptions, no cloud syncing delays, and no mandatory accounts. Just a lightning-fast, local environment to get deep work done.
 
 It combines proven study methodologies (Pomodoro, Flowtime, Active Recall) with a built-in Spaced Repetition System (SRS) and data-driven productivity tracking.
 
