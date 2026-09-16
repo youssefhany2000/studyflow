@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="./screenshots/icon.png" alt="StudyFlow Icon" width="120" />
+  <img src="./screenshots/icon.png" alt="StudyFlow Icon" width="150" />
 </div>
+
 # 🧠 StudyFlow
 
 > A deeply focused, local-first study environment built for serious learners.
