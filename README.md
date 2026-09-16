@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="./screenshots/icon.png" alt="StudyFlow Icon" width="120" />
+</div>
 # 🧠 StudyFlow
 
 > A deeply focused, local-first study environment built for serious learners.
@@ -78,6 +81,6 @@ npm run dev
 
 ## 👤 Author
 
-Developed by **[Your Name or GitHub Handle]**
+Developed by **[Youssef Hany]**
 - GitHub: [@youssefhany2000](https://github.com/youssefhany2000)
 - LinkedIn: [Youssef Hany](https://www.linkedin.com/in/youssef-hany-91a1a1340/)
